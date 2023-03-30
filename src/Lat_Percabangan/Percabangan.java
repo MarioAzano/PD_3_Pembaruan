@@ -7,6 +7,33 @@ import java.io.InputStreamReader;
 public class Percabangan {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int usia;
+        System.out.println("Masukkan Usia Anda : ");
+        usia=Integer.parseInt(br.readLine());
+        if (usia>=17) {
+            System.out.println("Sudah Memenuhi Syarat");
+        } else {
+            System.out.println("Belumn Memenuhi Syarat");
+        }
+
+
+        String nim;
+        int nilaiUas;
+        System.out.print("Masukkan NIM Anda : ");
+        nim= br.readLine();
+        nilaiUas=Integer.parseInt(br.readLine());
+
+        if (nim.equalsIgnoreCase("22410100045") && nilaiUas == 80) {
+            System.out.println("LULUS");
+        } else if (nim.equalsIgnoreCase("22410100045") && nilaiUas == 70) {
+            System.out.println("LULUS");
+        } else if (nim.equalsIgnoreCase("22410100045") && nilaiUas == 65) {
+            System.out.println("LULUS");
+        } else if (nim.equalsIgnoreCase("22410100045")&& nilaiUas <65) {
+            System.out.println("TIDAK LULUS");
+        } else {
+            System.out.println("Nilai Tidak Ditemukan");
+        }
 
 
         String menu, jenis;
